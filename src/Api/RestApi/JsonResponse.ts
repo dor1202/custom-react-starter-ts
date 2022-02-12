@@ -1,9 +1,9 @@
-import axios from 'axios';
+import axios, { AxiosInstance } from 'axios';
 
 class JsonResponse {
-    static _instance: any;
+    static _instance: JsonResponse;
     
-    instance;
+    instance: AxiosInstance;
 
     constructor() {
         this.instance = axios.create({

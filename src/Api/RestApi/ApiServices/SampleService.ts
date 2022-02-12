@@ -1,7 +1,7 @@
 import JsonResponse from '../JsonResponse';
 
 class SampleService{
-    static _instance;
+    static _instance: SampleService;
 
     async sampleCall(){
         let api = await JsonResponse.getInstance();

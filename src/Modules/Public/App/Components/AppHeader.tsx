@@ -12,7 +12,7 @@ function AppHeader() {
     const testApiRequest = async () => {
         const [result, error] = await AwaitHandling(SampleServiceInstance.sampleCall());
         if (error) return;
-        console.log(result.data);
+        console.log(result?.data);
     };
 
     return (
